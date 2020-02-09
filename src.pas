@@ -24,14 +24,19 @@ readln;
 writeln('This is an offline updater packaged with the newest versions of programs by fr4mew0rk. [PRESS ENTER]');
 readln;
 
+(* we will return here as the menu *)
 Menu:
 writeln('List of available programs:');
+(* #1 is based on if the actual updater is out-of-date *)
 writeln('1. FR4MEW0RK UPDATER');
+(* #2 will be updated arbitrarily. it may be a program for testing, it may not be. who knows? *)
 writeln('2. TST. PROGRAM');
 writeln('To select a program, type in the corresponding number.');
 writeln('To exit the program, please type in 3.');
 writeln('For different commands, type 4.');
 Readln(SEL);
+
+(* strings commands incoming in next build (hopefully) *)
 
 (* Begin Selections *)
 If SEL = 1  Then
@@ -85,6 +90,11 @@ Clrscr;
         Goto Menu;
 
         end;
+        
+        
+        
+(*------------------------------------*)
+(* EVERYTHING BELOW HERE IS MISC. COMMANDS *)
 
 If SEL = 11 Then
 Begin
@@ -99,3 +109,5 @@ Clrscr;
         end;
 
 end.
+
+(* Written by TJ of FR4MEW0RK dev studio in Pascal *)
