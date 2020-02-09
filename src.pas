@@ -1,8 +1,12 @@
+(*FR4MEW0RK UPDATER*)
+(*This program acts as an updater for fr4mew0rk software.*)
+(*Written in Pascal.*)
 program FrameUpdate;
 
-
+(*dependencies*)
 Uses Crt,Windows;
 
+(* This is where we'll be returning to. *)
 Label Menu;
 
 Var
@@ -78,6 +82,14 @@ Clrscr;
         Writeln('Exiting in 1 second..');
         Delay(1000);
         Writeln('CONSOLE: EXITING PROGRAM!!');
+        Writeln('sending kill command...');
+        Delay(200);
+        Writeln('shutting down..');
+        Delay(200);
+        Writeln('team fr4mew0rk.');
+        Writeln('Written by TJ in Pascal');
+        Delay(500);
+
 end;
 
 
@@ -91,6 +103,10 @@ Clrscr;
         Goto Menu;
 
         end;
+
+
+
+(* After this section, everything else is misc. commands *)
 
 If SEL = 11 Then
 Begin
